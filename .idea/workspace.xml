@@ -1,42 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="593931b5-c7ea-4498-8280-ea8fbeb80a53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_openjfx_javafx_base_15_ea_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_openjfx_javafx_controls_15_ea_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_openjfx_javafx_fxml_12_ea_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_openjfx_javafx_graphics_12_ea_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/00f86ce077e294283ea4964dd5a29932f25342e6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/011612f38e9bda64484c70d68a92ff2b7f80ab82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f434f75ec82421582af1361a1e2c13b3762a8b9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d5a4747f571fa9aa68ba06d0762f9402818c97a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/340300b88a33f4182b5ee9ca1d704ab2652954d4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f7f7ca59f0931ad607ec84bc847ece06fc142b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c5adbd151b00c5f4626e03d399355dba357a0b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d8b9672c5d8babad45ef0508184968ae693ae65" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bd6b26c4b221c18dd2d973820c6d81910ac3345" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74a68c8173eaa4e121c7c4dd11baec456d5046b1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/765114b0ae982ea0bd360265ebc119ad5376d3b3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/7901c54bd5629f5296e0a1e80189676ba8b49eec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b5064dcac72e06c4efbc14e5c7471b8c8a28523" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82cbb6b3fb7d4a4d91c86eeeab052633a510b5c2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b757fc1a4e5606afd351bd80f766934bd9bdd04" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d1811ed747611bbdbfc7ac3222a166f9d2471ef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93f03dcbeb3c650b4bf8e12a2ed6e933f6344b6c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2c249d3925e2c040835368e8fe52698abc5188d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aacb7d6eb9dd5dbacb525386cd565fc743b22dab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b18e25ef2749dc9dbed7cc9236386ccd03e6657d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0d5e583ecb70a5bc434692225fba4e0fa2ea539" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2bc6722e07ac0d9421f9064738c74d85ba6d2be" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d748d8766080efc90fdc1cab153cb0f95a859ff1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef2a47a854fbb3f6a1794517cc3c9686eac2d3a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="593931b5-c7ea-4498-8280-ea8fbeb80a53" name="Default Changelist" comment="Directorys">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kinoverwaltung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kinoverwaltung.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/mainMenu/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/mainMenu/MainMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/mainMenu/mainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/mainMenu/MainMenuController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ac4sqC3dsrZ1cOdOFy61aA3nUO" />
@@ -103,6 +74,7 @@
       <workItem from="1587021760339" duration="287000" />
       <workItem from="1587038696839" duration="3166000" />
       <workItem from="1587044319269" duration="394000" />
+      <workItem from="1587047294760" duration="632000" />
     </task>
     <task id="LOCAL-00001" summary="Directorys">
       <created>1587040801227</created>
@@ -115,7 +87,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Directorys" />
@@ -134,10 +106,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="439" y="625" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1440@0.0.2560.1440" timestamp="1587040671014" />
-    <state x="651" y="180" key="CommitChangelistDialog2" timestamp="1587040798884">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="488" y="135" key="CommitChangelistDialog2" timestamp="1587047546643">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587022054819" />
+    <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587047546643" />
     <state x="651" y="180" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040798884" />
     <state x="420" y="465" key="FileChooserDialogImpl" timestamp="1587044676049">
       <screen x="0" y="0" width="2560" height="1440" />
@@ -148,10 +120,10 @@
     </state>
     <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587022028507" />
     <state x="736" y="363" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040802973" />
-    <state x="655" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1587021760867">
+    <state x="655" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1587047295869">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="655" y="362" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587021760867" />
+    <state x="655" y="362" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587047295869" />
     <state x="375" y="612" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587044487622">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
