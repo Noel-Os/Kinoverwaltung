@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.openjfx:javafx-base:15-ea+3" type="repository">
+    <properties maven-id="org.openjfx:javafx-base:15-ea+3" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Programminglanguages/Java/javafx/javafx-base-15-ea+3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Programminglanguages/Java/javafx/javafx-base-15-ea+3-win.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

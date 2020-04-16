@@ -1,4 +1,4 @@
 package com.koeftespiess.mainMenu;
 
-public class mainMenuController {
+public class MainMenuController {
 }
