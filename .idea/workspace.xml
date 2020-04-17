@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="593931b5-c7ea-4498-8280-ea8fbeb80a53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/createMovie/CreateMovie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/createMovie/CreateMovie.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/createReservation/CreateReservation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/createReservation/CreateReservation.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       <workItem from="1587044319269" duration="394000" />
       <workItem from="1587047294760" duration="6884000" />
       <workItem from="1587108764122" duration="404000" />
-      <workItem from="1587109368086" duration="6336000" />
+      <workItem from="1587109368086" duration="7213000" />
     </task>
     <task id="LOCAL-00001" summary="Directorys">
       <created>1587040801227</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587114034741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="FXML CreateReservation verbessert">
+      <created>1587124491218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587124491218</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +136,8 @@
     <MESSAGE value="Directorys" />
     <MESSAGE value="FXML createMovie" />
     <MESSAGE value="FXML CreateReservation" />
-    <option name="LAST_COMMIT_MESSAGE" value="FXML CreateReservation" />
+    <MESSAGE value="FXML CreateReservation verbessert" />
+    <option name="LAST_COMMIT_MESSAGE" value="FXML CreateReservation verbessert" />
   </component>
   <component name="WindowStateProjectService">
     <state x="120" y="298" key="#Project_Structure" timestamp="1587044555193">
@@ -153,20 +161,20 @@
     </state>
     <state x="329" y="469" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587103815196" />
     <state x="439" y="625" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1440@0.0.2560.1440" timestamp="1587040671014" />
-    <state x="488" y="135" key="CommitChangelistDialog2" timestamp="1587114032768">
+    <state x="488" y="135" key="CommitChangelistDialog2" timestamp="1587124489243">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587114032768" />
+    <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587124489243" />
     <state x="651" y="180" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040798884" />
     <state x="315" y="349" key="FileChooserDialogImpl" timestamp="1587110669636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="315" y="349" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587110669636" />
     <state x="420" y="465" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1587044676049" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1587114041627">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1587124494563">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587114041627" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587124494563" />
     <state x="736" y="363" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040802973" />
     <state x="655" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1587109369672">
       <screen x="0" y="0" width="1920" height="1080" />

@@ -8,6 +8,8 @@
         <Pane>
             <TextField layoutX="10" layoutY="10" promptText="Name" />
             <TitledPane layoutX="10.0" layoutY="50.0" text="Präsentationen" />
+            <Button layoutX="211.0" layoutY="293.0" text="Film erstellen" underline="true" />
+            <Button layoutX="245.0" layoutY="330" text="Zurück" underline="true" />
         </Pane>
     </children>
 </AnchorPane>

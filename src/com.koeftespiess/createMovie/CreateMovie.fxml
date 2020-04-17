@@ -12,10 +12,15 @@
             <TextField fx:id="movieLength" layoutX="10" layoutY="210" promptText="Länge" />
             <Pane fx:id="movieImage" layoutX="60.0" layoutY="310.0" maxHeight="300" maxWidth="300" scaleX="50.0" scaleY="50.0" style="-fx-border-color: lightgrey;" />
             <Label layoutX="50.0" layoutY="300.0">Bild</Label>
-            <Button layoutX="230.0" layoutY="330" text="Film erstellen" underline="true">
+            <Button layoutX="230.0" layoutY="270" text="Film erstellen" underline="true">
             <font>
                <Font size="20.0" />
             </font>
+            </Button>
+            <Button layoutX="286.0" layoutY="330" text="Zurück" underline="true">
+                <font>
+                    <Font size="20.0" />
+                </font>
             </Button>
         </Pane>
     </children>
