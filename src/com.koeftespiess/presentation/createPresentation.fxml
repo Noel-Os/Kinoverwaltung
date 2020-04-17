@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.koeftespiess.presentation.CreatePresentation">
+    <children>
+        <VBox layoutX="50.0" prefHeight="400" prefWidth="200">
+            <ComboBox layoutY="50.0" prefWidth="200" promptText="Film auswählen">
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+            </ComboBox>
+            <ComboBox prefWidth="200" promptText="Raum auswählen">
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+            </ComboBox>
+            <TextField promptText="Uhrzeit">
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+            </TextField>
+        </VBox>
+        <Button layoutX="480.0" layoutY="340.0" prefWidth="70" text="Erstellen"/>
+    </children>
+</AnchorPane>
