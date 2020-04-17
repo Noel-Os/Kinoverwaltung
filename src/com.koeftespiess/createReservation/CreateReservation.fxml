@@ -7,9 +7,7 @@
     <children>
         <Pane>
             <TextField layoutX="10" layoutY="10" promptText="Name" />
-            <TreeView layoutY="20.0" scaleY="0.9">
-                <TreeItem value="fill"></TreeItem>
-            </TreeView>
+            <TitledPane layoutX="10.0" layoutY="50.0" text="Präsentationen" />
         </Pane>
     </children>
 </AnchorPane>
