@@ -5,11 +5,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Pane>
-            <TextField layoutX="10" layoutY="10" promptText="Name" />
-            <TitledPane layoutX="10.0" layoutY="50.0" text="Präsentationen" />
-            <Button layoutX="211.0" layoutY="293.0" text="Film erstellen" underline="true" />
-            <Button layoutX="245.0" layoutY="330" text="Zurück" underline="true" />
-        </Pane>
+        <VBox prefWidth="200">
+            <Pane prefWidth="200">
+                <TextField layoutX="50.0" layoutY="50.0" promptText="Name" />
+                <TitledPane layoutX="50.0" layoutY="120.0" text="Präsentationen" />
+
+                <Button layoutX="480.0" layoutY="340.0" prefWidth="70" text="Erstellen" />
+                <Button layoutX="480.0" layoutY="370.0" prefWidth="70" text="Zurück" />
+            </Pane>
+        </VBox>
     </children>
 </AnchorPane>

@@ -2,26 +2,20 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Pane>
-            <TextField fx:id="movieName" layoutX="10" layoutY="10" promptText="Name" />
-            <TextField fx:id="movieDescription" layoutX="10" layoutY="110" promptText="Beschreibung" />
-            <TextField fx:id="movieLength" layoutX="10" layoutY="210" promptText="Länge" />
-            <Pane fx:id="movieImage" layoutX="60.0" layoutY="310.0" maxHeight="300" maxWidth="300" scaleX="50.0" scaleY="50.0" style="-fx-border-color: lightgrey;" />
-            <Label layoutX="50.0" layoutY="300.0">Bild</Label>
-            <Button layoutX="230.0" layoutY="270" text="Film erstellen" underline="true">
-            <font>
-               <Font size="20.0" />
-            </font>
-            </Button>
-            <Button layoutX="286.0" layoutY="330" text="Zurück" underline="true">
-                <font>
-                    <Font size="20.0" />
-                </font>
-            </Button>
-        </Pane>
+        <VBox prefWidth="200">
+            <Pane>
+                <TextField fx:id="movieName" layoutX="50.0" layoutY="50.0" promptText="Name" />
+                <TextField fx:id="movieDesc" layoutX="50.0" layoutY="120.0" promptText="Description" />
+                <TextField fx:id="movieLength" layoutX="50.0" layoutY="190.0" promptText="Länge" />
+
+                <Pane layoutX="100.0" layoutY="310.0" scaleX="50.0" scaleY="50.0" style="-fx-border-color: lightgrey;" />
+
+                <Button layoutX="480.0" layoutY="340.0" prefWidth="70" text="Erstellen" />
+                <Button layoutX="480.0" layoutY="370.0" prefWidth="70" text="Zurück" />
+            </Pane>
+        </VBox>
     </children>
 </AnchorPane>
