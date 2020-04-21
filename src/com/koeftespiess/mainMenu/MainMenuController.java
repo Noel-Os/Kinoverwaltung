@@ -1,4 +1,4 @@
-package comkoeftespiess.mainMenu;
+package com.koeftespiess.mainMenu;
 
 public class MainMenuController {
 }

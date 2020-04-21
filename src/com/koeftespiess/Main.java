@@ -1,4 +1,4 @@
-package comkoeftespiess;
+package com.koeftespiess;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -55,7 +55,7 @@ public class Main extends Application {
     public void showCreateMovie() {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("createMovie/createMovie.fxml"));
+            root = FXMLLoader.load(getClass().getResource("createMovie/CreateMovie.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

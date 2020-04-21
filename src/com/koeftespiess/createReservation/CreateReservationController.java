@@ -1,6 +1,6 @@
-package comkoeftespiess.createReservation;
+package com.koeftespiess.createReservation;
 
-import comkoeftespiess.Main;
+import com.koeftespiess.Main;
 import javafx.event.ActionEvent;
 
 public class CreateReservationController {

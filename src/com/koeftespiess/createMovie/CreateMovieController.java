@@ -1,6 +1,6 @@
-package comkoeftespiess.createMovie;
+package com.koeftespiess.createMovie;
 
-import comkoeftespiess.Main;
+import com.koeftespiess.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
