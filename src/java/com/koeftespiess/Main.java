@@ -1,5 +1,8 @@
 package com.koeftespiess;
 
+
+import com.koeftespiess.classes.Cinema;
+import com.koeftespiess.classes.Movie;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,12 +10,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.UUID;
 
 public class Main extends Application {
 
     Cinema cinema = new Cinema();
-
-    public Object addMovie;
 
     public Stage primaryStage;
 
@@ -46,9 +48,9 @@ public class Main extends Application {
         launch(args);
     }
 
-    public void addMovie(String movieName, String movieDescription, String movieLength) {
+    public void addMovie(String movieName, String movieDescription, int movieLength) {
 
-        cinema.addMovie(new Movie(movieName, movieDescription, movieLength));
+        cinema.addMovie(new Movie(UUID.randomUUID().toString(),movieName, movieDescription, movieLength));
 
     }
 

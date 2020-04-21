@@ -1,24 +1,51 @@
 package com.koeftespiess.classes;
 
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
 public class Movie {
 
     @Id
+    private String ID;
     private String name;
     //in Minuten
+    private String description;
     private int duration;
-    private int fsk;
+
+
+    public Movie(String ID, String name, String description, int duration) {
+        this.ID = ID;
+        this.name = name;
+        this.description = description;
+        this.duration = duration;
+    }
 
     @Override
     public String toString() {
         return "Movie{" +
-                "name='" + name + '\'' +
+                "ID='" + ID + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
                 ", duration=" + duration +
-                ", fsk=" + fsk +
                 '}';
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getName() {
@@ -35,13 +62,5 @@ public class Movie {
 
     public void setDuration(int duration) {
         this.duration = duration;
-    }
-
-    public int getFsk() {
-        return fsk;
-    }
-
-    public void setFsk(int fsk) {
-        this.fsk = fsk;
     }
 }

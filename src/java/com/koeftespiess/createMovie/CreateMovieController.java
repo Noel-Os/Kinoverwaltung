@@ -31,7 +31,7 @@ public class CreateMovieController {
     public void addMovie() {
 
         //if (movieName.getText() != "Name") {
-        Main.getInstance().addMovie(movieName.getText(), movieDescription.getText(), movieLength.getText());
+        Main.getInstance().addMovie(movieName.getText(), movieDescription.getText(),  movieLength.getText());
         //}else{
         //    System.out.println("Bitte geben Sie einen Namen und eine Länge an.");
         //}

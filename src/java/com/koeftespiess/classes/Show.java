@@ -1,19 +1,23 @@
 package com.koeftespiess.classes;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import java.util.Date;
 
 @Entity
 public class Show {
 
     @Id
+    private String ID;
     private Date displayDate;
     @OneToOne
     private Movie movie;
     @OneToOne
     private Room room;
 
-    public Show(Date displayDate, Movie movie, Room room) {
+    public Show(String ID, Date displayDate, Movie movie, Room room) {
+        this.ID = ID;
         this.displayDate = displayDate;
         this.movie = movie;
         this.room = room;
@@ -22,10 +26,19 @@ public class Show {
     @Override
     public String toString() {
         return "Show{" +
-                "displayDate=" + displayDate +
+                "ID='" + ID + '\'' +
+                ", displayDate=" + displayDate +
                 ", movie=" + movie +
                 ", room=" + room +
                 '}';
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public Date getDisplayDate() {
