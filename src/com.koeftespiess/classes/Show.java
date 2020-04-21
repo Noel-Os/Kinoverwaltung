@@ -1,4 +1,5 @@
 package com.koeftespiess.classes;
 
-public class Room {
+public class Show extends Item {
+
 }

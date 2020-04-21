@@ -1,5 +1,4 @@
 package com.koeftespiess.classes;
 
-public class Movie {
-
+public class Room extends Item {
 }
