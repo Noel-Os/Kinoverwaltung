@@ -7,7 +7,7 @@ public class Movie extends Item {
 
 
     private String name;
-
     //in Minuten
     private int duration;
+    private int fsk;
 }

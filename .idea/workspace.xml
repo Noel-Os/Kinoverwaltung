@@ -2,51 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="593931b5-c7ea-4498-8280-ea8fbeb80a53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_14_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/00f86ce077e294283ea4964dd5a29932f25342e6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0f434f75ec82421582af1361a1e2c13b3762a8b9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2d5a4747f571fa9aa68ba06d0762f9402818c97a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/340300b88a33f4182b5ee9ca1d704ab2652954d4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f7f7ca59f0931ad607ec84bc847ece06fc142b3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c5adbd151b00c5f4626e03d399355dba357a0b3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d8b9672c5d8babad45ef0508184968ae693ae65" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6bd6b26c4b221c18dd2d973820c6d81910ac3345" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/765114b0ae982ea0bd360265ebc119ad5376d3b3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/7901c54bd5629f5296e0a1e80189676ba8b49eec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/b/7b5064dcac72e06c4efbc14e5c7471b8c8a28523" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d1811ed747611bbdbfc7ac3222a166f9d2471ef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93f03dcbeb3c650b4bf8e12a2ed6e933f6344b6c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a2c249d3925e2c040835368e8fe52698abc5188d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aacb7d6eb9dd5dbacb525386cd565fc743b22dab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/1/b18e25ef2749dc9dbed7cc9236386ccd03e6657d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2bc6722e07ac0d9421f9064738c74d85ba6d2be" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d748d8766080efc90fdc1cab153cb0f95a859ff1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef2a47a854fbb3f6a1794517cc3c9686eac2d3a1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kinoverwaltung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kinoverwaltung.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/koeftespiess/classes/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/koeftespiess/classes/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/koeftespiess/classes/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/classes/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/classes/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com.koeftespiess/classes/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com.koeftespiess/classes/Show.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +27,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="noel" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,23 +57,26 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com.koeftespiess" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Kinoverwaltung-programm" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.koeftespiess" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Noel\Desktop\Alles was uf de Laptop mues\Projekt\Kinoverwaltung\src\com.koeftespiess\createMovie" />
+      <recent name="C:\Users\Noel\Desktop\Alles was uf de Laptop mues\Projekt\Kinoverwaltung\src\com.koeftespiess\createReservation" />
+      <recent name="C:\Users\Noel\Desktop\Alles was uf de Laptop mues\Projekt\Kinoverwaltung\src\com.koeftespiess\showMovie" />
+      <recent name="C:\Users\Noel\Desktop\Alles was uf de Laptop mues\Projekt\Kinoverwaltung\src\com\koeftespiess\showMovie" />
       <recent name="D:\API\scripts\Kinoverwaltung\src\main" />
     </key>
   </component>
@@ -119,10 +93,10 @@
       <workItem from="1587021760339" duration="287000" />
       <workItem from="1587038696839" duration="3166000" />
       <workItem from="1587044319269" duration="394000" />
-
-      <workItem from="1587047282624" duration="699000" />
-      <workItem from="1587131396215" duration="2437000" />
-      <workItem from="1587450275528" duration="321000" />
+      <workItem from="1587047294760" duration="6884000" />
+      <workItem from="1587108764122" duration="404000" />
+      <workItem from="1587109368086" duration="11792000" />
+      <workItem from="1587393625193" duration="10192000" />
     </task>
     <task id="LOCAL-00001" summary="Directorys">
       <created>1587040801227</created>
@@ -132,27 +106,62 @@
       <updated>1587040801227</updated>
     </task>
     <task id="LOCAL-00002" summary="Directorys">
-      <created>1587047359793</created>
+      <created>1587047948553</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1587047359793</updated>
+      <updated>1587047948553</updated>
     </task>
     <task id="LOCAL-00003" summary="Directorys">
-      <created>1587047973785</created>
+      <created>1587047975793</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1587047973785</updated>
+      <updated>1587047975793</updated>
     </task>
-    <task id="LOCAL-00004" summary="nofront">
-      <created>1587131678531</created>
+    <task id="LOCAL-00004" summary="FXML createMovie">
+      <created>1587107330186</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1587131678531</updated>
+      <updated>1587107330186</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="FXML CreateReservation">
+      <created>1587114034741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587114034741</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FXML CreateReservation verbessert">
+      <created>1587124491218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587124491218</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FXML CreateReservation verbessert">
+      <created>1587125233954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587125233954</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FXML CreateReservation verbessert">
+      <created>1587129265817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587129265817</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FXML CreateMovie.fxml">
+      <created>1587450269898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587450269899</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,62 +169,76 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Directorys" />
-    <MESSAGE value="nofront" />
-    <option name="LAST_COMMIT_MESSAGE" value="nofront" />
+    <MESSAGE value="FXML createMovie" />
+    <MESSAGE value="FXML CreateReservation" />
+    <MESSAGE value="FXML CreateReservation verbessert" />
+    <MESSAGE value="FXML CreateMovie.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="FXML CreateMovie.fxml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="120" y="298" key="#Project_Structure" timestamp="1587133936233">
+    <state x="120" y="298" key="#Project_Structure" timestamp="1587044555193">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="120" y="298" key="#Project_Structure/0.0.2560.1440@0.0.2560.1440" timestamp="1587133936233" />
-    <state x="1086" y="437" key="#com.intellij.ide.util.MemberChooser" timestamp="1587133037198">
+    <state x="120" y="298" key="#Project_Structure/0.0.2560.1440@0.0.2560.1440" timestamp="1587044555193" />
+    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587114397725">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587114397725" />
+    <state x="1020" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1587452877304">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="1086" y="437" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1587133037198" />
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587111819154" />
+    <state x="1020" y="340" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1587452877304" />
     <state x="997" y="369" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587038722162">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="997" y="369" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1587038722162" />
-    <state x="490" y="229" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1587109019354">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="490" y="229" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680@0.0.1280.680" timestamp="1587109019354" />
-    <state x="220" y="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587124458729">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="220" y="295" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1587124458729" />
-    <state x="439" y="625" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1440@0.0.2560.1440" timestamp="1587040671014" />
-
-    <state x="286" y="0" key="CommitChangelistDialog2" timestamp="1587134300633">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="286" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587134300633" />
-    <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587022054819" />
-    <state x="651" y="180" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587131677665" />
-    <state x="420" y="465" key="FileChooserDialogImpl" timestamp="1587133880412">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="420" y="465" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1587133880412" />
-    <state x="782" y="366" key="SettingsEditor" timestamp="1587133971912">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="782" y="366" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1587133971912" />
-    <state x="736" y="363" key="Vcs.Push.Dialog.v2" timestamp="1587131681112">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587022028507" />
-    <state x="736" y="363" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587131681112" />
-    <state x="655" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1587021760867">
+    <state x="329" y="469" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587103815196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="655" y="362" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587021760867" />
+    <state x="329" y="469" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587103815196" />
+    <state x="439" y="625" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1440@0.0.2560.1440" timestamp="1587040671014" />
+    <state x="2408" y="135" key="CommitChangelistDialog2" timestamp="1587450267914">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587129263557" />
+    <state x="2408" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587450267914" />
+    <state x="651" y="180" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040798884" />
+    <state x="2235" y="349" key="FileChooserDialogImpl" timestamp="1587395279317">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="315" y="349" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587110669636" />
+    <state x="2235" y="349" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587395279317" />
+    <state x="420" y="465" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1587044676049" />
+    <state x="0" y="130" key="MergeDialog" timestamp="1587452518394">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="0" y="130" key="MergeDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1587452518394" />
+    <state x="2472" y="272" key="Vcs.Push.Dialog.v2" timestamp="1587450273687">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587129267794" />
+    <state x="2472" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587450273687" />
+    <state x="736" y="363" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040802973" />
+    <state x="655" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1587394002952">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="655" y="362" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587394002952" />
     <state x="375" y="612" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587044487622">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="375" y="612" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1440@0.0.2560.1440" timestamp="1587044487622" />
-    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1587133954173">
+    <state x="769" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587128259588">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="769" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587128259588" />
+    <state x="420" y="355" key="git4idea.branch.GitSmartOperationDialog" timestamp="1587452510498">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587133954173" />
+    <state x="420" y="355" key="git4idea.branch.GitSmartOperationDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1587452510498" />
+    <state x="342" y="241" key="new project wizard" timestamp="1587105120756">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="342" y="241" key="new project wizard/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587105120756" />
   </component>
 </project>
