@@ -33,5 +33,6 @@
     <orderEntry type="library" name="org.openjfx:javafx-fxml:12-ea+11" level="project" />
     <orderEntry type="library" name="org.openjfx:javafx-base:15-ea+3" level="project" />
     <orderEntry type="library" name="org.openjfx:javafx-graphics:12-ea+6" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

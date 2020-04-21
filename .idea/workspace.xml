@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="593931b5-c7ea-4498-8280-ea8fbeb80a53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kinoverwaltung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kinoverwaltung.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +15,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="package-info" />
         <option value="FxmlFile" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +47,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com.koeftespiess" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,7 +62,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.koeftespiess" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.koeftespiess.createroom" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lorena\IdeaProjects\Kinoverwaltung\src\com.koeftespiess" />
+      <recent name="C:\Users\Lorena\IdeaProjects\Kinoverwaltung\src\createRoom" />
       <recent name="D:\API\scripts\Kinoverwaltung\src\main" />
     </key>
   </component>
@@ -74,7 +84,10 @@
       <workItem from="1587021760339" duration="287000" />
       <workItem from="1587038696839" duration="3166000" />
       <workItem from="1587044319269" duration="394000" />
-      <workItem from="1587047293047" duration="666000" />
+      <workItem from="1587047293047" duration="1072000" />
+      <workItem from="1587110054189" duration="1998000" />
+      <workItem from="1587112382493" duration="338000" />
+      <workItem from="1587112898856" duration="2537000" />
     </task>
     <task id="LOCAL-00001" summary="Directorys">
       <created>1587040801227</created>
@@ -83,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587040801227</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-">
+      <created>1587048002222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587048002222</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,33 +111,47 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Directorys" />
-    <option name="LAST_COMMIT_MESSAGE" value="Directorys" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="120" y="298" key="#Project_Structure" timestamp="1587044555193">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="72" y="142" key="#Project_Structure" timestamp="1587110233863">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="72" y="142" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587110233863" />
     <state x="120" y="298" key="#Project_Structure/0.0.2560.1440@0.0.2560.1440" timestamp="1587044555193" />
     <state x="997" y="369" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1587038722162">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="997" y="369" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1587038722162" />
-    <state x="439" y="625" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587040671014">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="263" y="358" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587111788604">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="263" y="358" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1587111788604" />
     <state x="439" y="625" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.2560.1440@0.0.2560.1440" timestamp="1587040671014" />
-    <state x="651" y="180" key="CommitChangelistDialog2" timestamp="1587040798884">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1587048001461">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587048001461" />
     <state x="488" y="135" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587022054819" />
     <state x="651" y="180" key="CommitChangelistDialog2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040798884" />
-    <state x="420" y="465" key="FileChooserDialogImpl" timestamp="1587044676049">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="252" y="266" key="FileChooserDialogImpl" timestamp="1587110249896">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="252" y="266" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587110249896" />
     <state x="420" y="465" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1587044676049" />
-    <state x="736" y="363" key="Vcs.Push.Dialog.v2" timestamp="1587040802973">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1587110256992">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587110256992" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1587110849951">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1587110849951" />
+    <state x="442" y="208" key="Vcs.Push.Dialog.v2" timestamp="1587048007213">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="442" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587048007213" />
     <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1587022028507" />
     <state x="736" y="363" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1587040802973" />
     <state x="655" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1587021760867">
@@ -132,5 +166,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="577" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587047956728" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1587113143288">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1587113143288" />
   </component>
 </project>
