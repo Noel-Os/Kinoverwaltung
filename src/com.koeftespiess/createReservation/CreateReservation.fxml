@@ -7,8 +7,8 @@
     <children>
         <VBox prefWidth="200">
             <Pane prefWidth="200">
-                <TextField layoutX="50.0" layoutY="50.0" promptText="Name" />
-                <TitledPane layoutX="50.0" layoutY="120.0" text="Präsentationen" />
+                <TextField fx:id="customerName" layoutX="50.0" layoutY="50.0" promptText="Name" />
+                <TitledPane fx:id="presentation" layoutX="50.0" layoutY="120.0" text="Präsentationen" />
 
                 <Button layoutX="480.0" layoutY="340.0" prefWidth="70" text="Erstellen" />
                 <Button layoutX="480.0" layoutY="370.0" prefWidth="70" text="Zurück" />
