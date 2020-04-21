@@ -1,16 +1,19 @@
 package com.koeftespiess.classes;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
-public class Room{
+public class Room {
 
     @Id
+    private String ID;
     private int rows;
     private int cols;
     private String name;
 
-    public Room(int rows, int cols, String name) {
+    public Room(String ID, int rows, int cols, String name) {
+        this.ID = ID;
         this.rows = rows;
         this.cols = cols;
         this.name = name;
@@ -19,10 +22,19 @@ public class Room{
     @Override
     public String toString() {
         return "Room{" +
-                "rows=" + rows +
+                "ID='" + ID + '\'' +
+                ", rows=" + rows +
                 ", cols=" + cols +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public int getRows() {
