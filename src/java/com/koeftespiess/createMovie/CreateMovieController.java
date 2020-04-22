@@ -12,6 +12,7 @@ import javafx.scene.input.TransferMode;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 public class CreateMovieController {
@@ -28,14 +29,14 @@ public class CreateMovieController {
     @FXML
     private ImageView movieImage;
 
-    public void addMovie() {
+    public void addMovie() throws IOException {
 
         //if (movieName.getText() != "Name") {
-        Main.getInstance().addMovie(movieName.getText(), movieDescription.getText(),  movieLength.getText());
+        Main.getInstance().addMovie(movieName.getText(), movieDescription.getText(), Integer.parseInt(movieLength.getText()));
         //}else{
         //    System.out.println("Bitte geben Sie einen Namen und eine Länge an.");
         //}
-
+        this.back(new ActionEvent());
     }
 
     @FXML
@@ -53,7 +54,7 @@ public class CreateMovieController {
         movieImage.setImage(img);
     }
 
-    public void back(ActionEvent actionEvent) {
+    public void back(ActionEvent actionEvent) throws IOException {
 
         Main.getInstance().showMainMenu();
 

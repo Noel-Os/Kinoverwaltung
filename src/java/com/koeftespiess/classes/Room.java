@@ -7,50 +7,39 @@ import javax.persistence.Id;
 public class Room {
 
     @Id
-    private String ID;
-    private int rows;
-    private int cols;
+    private int roomRows;
+    private int roomCols;
     private String name;
 
-    public Room(String ID, int rows, int cols, String name) {
-        this.ID = ID;
-        this.rows = rows;
-        this.cols = cols;
+    public Room(int rows, int cols, String name) {
+        this.roomRows = rows;
+        this.roomCols = cols;
         this.name = name;
     }
 
     @Override
     public String toString() {
         return "Room{" +
-                "ID='" + ID + '\'' +
-                ", rows=" + rows +
-                ", cols=" + cols +
+                ", rows=" + roomRows +
+                ", cols=" + roomCols +
                 ", name='" + name + '\'' +
                 '}';
     }
 
-    public String getID() {
-        return ID;
+    public int getRoomRows() {
+        return roomRows;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setRoomRows(int roomRows) {
+        this.roomRows = roomRows;
     }
 
-    public int getRows() {
-        return rows;
+    public int getRoomCols() {
+        return roomCols;
     }
 
-    public void setRows(int rows) {
-        this.rows = rows;
-    }
-
-    public int getCols() {
-        return cols;
-    }
-
-    public void setCols(int cols) {
-        this.cols = cols;
+    public void setRoomCols(int roomCols) {
+        this.roomCols = roomCols;
     }
 
     public String getName() {

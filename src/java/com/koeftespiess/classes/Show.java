@@ -3,20 +3,20 @@ package com.koeftespiess.classes;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 public class Show {
 
     @Id
     private String ID;
-    private Date displayDate;
+    private LocalDate displayDate;
     @OneToOne
     private Movie movie;
     @OneToOne
     private Room room;
 
-    public Show(String ID, Date displayDate, Movie movie, Room room) {
+    public Show(String ID, LocalDate displayDate, Movie movie, Room room) {
         this.ID = ID;
         this.displayDate = displayDate;
         this.movie = movie;
@@ -41,11 +41,11 @@ public class Show {
         this.ID = ID;
     }
 
-    public Date getDisplayDate() {
+    public LocalDate getDisplayDate() {
         return displayDate;
     }
 
-    public void setDisplayDate(Date displayDate) {
+    public void setDisplayDate(LocalDate displayDate) {
         this.displayDate = displayDate;
     }
 
@@ -63,5 +63,9 @@ public class Show {
 
     public void setRoom(Room room) {
         this.room = room;
+    }
+
+    public boolean isMe(String id){
+        return id.equals(this.ID);
     }
 }
