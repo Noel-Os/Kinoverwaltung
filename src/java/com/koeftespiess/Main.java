@@ -18,16 +18,16 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.UUID;
 
 public class Main extends Application {
 
-    private Cinema cinema = new Cinema();
+    public Cinema cinema = new Cinema();
 
     public Stage primaryStage;
 
     private static Main instance;
+    private Session session;
 
     public static Main getInstance() {
         return instance;
@@ -36,6 +36,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Main.instance = this;
+        this.session = getSession();
         this.primaryStage = primaryStage;
 
         primaryStage.setTitle("MainMenu");
@@ -47,48 +48,37 @@ public class Main extends Application {
         launch(args);
     }
 
+    public Session getSession() {
+        if (this.session != null) return this.session;
+
+        Configuration con = new Configuration().configure();
+        con.addAnnotatedClass(Movie.class);
+        con.addAnnotatedClass(Room.class);
+        con.addAnnotatedClass(Show.class);
+
+        ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
+
+        SessionFactory sf = con.buildSessionFactory(reg);
+
+        this.session = sf.openSession();
+        return this.session;
+    }
+
     public void saveMovie(Movie movie) {
-        Configuration con = new Configuration().configure().addAnnotatedClass(Movie.class);
-
-        ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
-
-        SessionFactory sf = con.buildSessionFactory(reg);
-
-        Session session = sf.openSession();
-
-        Transaction tx = session.beginTransaction();
-
+        Transaction tx = getSession().beginTransaction();
         session.save(movie);
-
-        tx.commit();
-    }public void saveShow(Show show) {
-        Configuration con = new Configuration().configure().addAnnotatedClass(Show.class);
-
-        ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
-
-        SessionFactory sf = con.buildSessionFactory(reg);
-
-        Session session = sf.openSession();
-
-        Transaction tx = session.beginTransaction();
-
-        session.save(show);
-
         tx.commit();
     }
+
+    public void saveShow(Show show) {
+        Transaction tx = getSession().beginTransaction();
+        session.save(show);
+        tx.commit();
+    }
+
     public void saveRoom(Room room) {
-        Configuration con = new Configuration().configure().addAnnotatedClass(Room.class);
-
-        ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
-
-        SessionFactory sf = con.buildSessionFactory(reg);
-
-        Session session = sf.openSession();
-
-        Transaction tx = session.beginTransaction();
-
+        Transaction tx = getSession().beginTransaction();
         session.save(room);
-
         tx.commit();
     }
 
@@ -106,7 +96,7 @@ public class Main extends Application {
         this.saveRoom(room);
     }
 
-    public void addShow(LocalDate date, Movie movie, Room room){
+    public void addShow(LocalDate date, Movie movie, Room room) {
         Show show = new Show(UUID.randomUUID().toString(), date, movie, room);
         System.out.println(show.toString());
         this.cinema.addShow(show);
