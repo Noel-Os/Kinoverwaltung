@@ -23,5 +23,11 @@
             <Font size="24.0" />
          </font></Label>
           <Button layoutX="493.0" layoutY="334.0" onAction="#addMovie" prefHeight="36.0" prefWidth="64.0" text="Erstellen" />
+      <Label fx:id="dragdroplb" alignment="CENTER" contentDisplay="CENTER" disable="true" graphicTextGap="0.0" layoutX="352.0" layoutY="144.0" prefHeight="111.0" prefWidth="127.0" style="-fx-background-color: grey;" text="Drag and Drop" textAlignment="RIGHT" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label fx:id="piclb" layoutX="352.0" layoutY="126.0" text="Bild" />
     </children>
 </AnchorPane>
