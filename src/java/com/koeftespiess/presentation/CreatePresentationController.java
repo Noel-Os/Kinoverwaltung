@@ -3,6 +3,7 @@ package com.koeftespiess.presentation;
 import com.koeftespiess.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -11,7 +12,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CreatePresentationController {
+public class CreatePresentationController implements Initializable {
 
     @FXML
     DatePicker date;
@@ -28,7 +29,8 @@ public class CreatePresentationController {
     @FXML
     ComboBox movie;
 
-    public void initialize​(URL location, ResourceBundle resources){
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
 
