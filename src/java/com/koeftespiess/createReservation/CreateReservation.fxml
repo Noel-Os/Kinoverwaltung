@@ -2,17 +2,25 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.koeftespiess.createReservation.CreateReservationController">
     <children>
         <VBox prefWidth="200">
             <Pane prefWidth="200">
-                <TextField fx:id="customerName" layoutX="50.0" layoutY="50.0" promptText="Name" />
-                <TitledPane fx:id="presentation" layoutX="50.0" layoutY="120.0" text="Präsentationen" />
+                <TextField fx:id="customerName" layoutX="50.0" layoutY="116.0" prefHeight="36.0" prefWidth="186.0" promptText="Name" />
+                <TitledPane fx:id="presentation" layoutX="51.0" layoutY="199.0" text="Präsentationen" />
 
-                <Button layoutX="480.0" layoutY="340.0" prefWidth="70" text="Erstellen" />
-                <Button layoutX="480.0" layoutY="370.0" prefWidth="70" text="Zurück" onAction="#back"/>
+                <Button layoutX="493.0" layoutY="334.0" prefHeight="36.0" prefWidth="64.0" text="Erstellen" />
+                <Button layoutX="27.0" layoutY="334.0" onAction="#back" prefHeight="36.0" prefWidth="64.0" text="Zurück" />
+            <Label layoutX="51.0" layoutY="97.0" text="Name des Kunden" />
+            <Label layoutX="50.0" layoutY="181.0" text="Was wollen Sie sich ansehen" />
             </Pane>
         </VBox>
+      <Label layoutX="190.0" layoutY="27.0" text="Reservation erstellen">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
