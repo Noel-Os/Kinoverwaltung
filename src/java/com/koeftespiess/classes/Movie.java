@@ -8,15 +8,13 @@ import javax.persistence.Id;
 public class Movie {
 
     @Id
-    private String ID;
     private String name;
     //in Minuten
     private String description;
     private int duration;
 
 
-    public Movie(String ID, String name, String description, int duration) {
-        this.ID = ID;
+    public Movie(String name, String description, int duration) {
         this.name = name;
         this.description = description;
         this.duration = duration;
@@ -25,19 +23,10 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie{" +
-                "ID='" + ID + '\'' +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", duration=" + duration +
                 '}';
-    }
-
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
     }
 
     public String getDescription() {
