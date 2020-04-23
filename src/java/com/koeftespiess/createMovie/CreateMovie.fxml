@@ -6,7 +6,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.koeftespiess.createMovie.CreateMovieController">
     <children>
-        <ImageView fx:id="movieImage" fitHeight="105.0" fitWidth="149.0" layoutX="48.0" layoutY="264.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" smooth="false" />
+      <Pane layoutX="50.0" layoutY="263.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" prefHeight="105.0" prefWidth="149.0" />
+        <ImageView fx:id="movieImage" fitHeight="105.0" fitWidth="149.0" layoutX="48.0" layoutY="264.0" smooth="false" />
         <VBox prefWidth="200">
             <Pane>
                 <TextField fx:id="movieName" layoutX="50.0" layoutY="50.0" promptText="Name" />

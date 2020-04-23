@@ -5,6 +5,7 @@ import com.koeftespiess.classes.Movie;
 import com.koeftespiess.classes.Room;
 import com.koeftespiess.classes.Show;
 import javafx.application.Application;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -18,7 +19,6 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.UUID;
 
 public class Main extends Application {
@@ -61,7 +61,8 @@ public class Main extends Application {
         session.save(movie);
 
         tx.commit();
-    }public void saveShow(Show show) {
+    }
+    public void saveShow(Show show) {
         Configuration con = new Configuration().configure().addAnnotatedClass(Show.class);
 
         ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
@@ -131,5 +132,14 @@ public class Main extends Application {
     public void showCreateMovie() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createMovie/CreateMovie.fxml"));
         this.primaryStage.setScene(new Scene(root));
+    }
+
+    public void showRoom() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("showRoom/showRoom.fxml"));
+        this.primaryStage.setScene(new Scene(root));
+    }
+
+    public ObservableList<Room> getRooms() {
+        return cinema.getRooms();
     }
 }
