@@ -1,23 +1,26 @@
 package com.koeftespiess.classes;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-public class Show {
+public class Presentation {
 
     @Id
-    private String ID;
+    @GeneratedValue
+    private int ID;
     private LocalDate displayDate;
-    @OneToOne
+    @ManyToOne
     private Movie movie;
-    @OneToOne
+    @ManyToOne
     private Room room;
 
-    public Show(String ID, LocalDate displayDate, Movie movie, Room room) {
-        this.ID = ID;
+
+    public Presentation() {
+    }
+
+
+    public Presentation(LocalDate displayDate, Movie movie, Room room) {
         this.displayDate = displayDate;
         this.movie = movie;
         this.room = room;
@@ -25,7 +28,7 @@ public class Show {
 
     @Override
     public String toString() {
-        return "Show{" +
+        return "Presentation{" +
                 "ID='" + ID + '\'' +
                 ", displayDate=" + displayDate +
                 ", movie=" + movie +
@@ -33,11 +36,11 @@ public class Show {
                 '}';
     }
 
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 
@@ -65,7 +68,7 @@ public class Show {
         this.room = room;
     }
 
-    public boolean isMe(String id){
-        return id.equals(this.ID);
+    public boolean isMe(int id){
+        return id == this.ID ;
     }
 }

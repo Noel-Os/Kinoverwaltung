@@ -1,15 +1,38 @@
 package com.koeftespiess.classes;
 
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.List;
-
 public class Cinema {
     ObservableList<Movie> movies;
-    ObservableList<Show> shows;
+    ObservableList<Presentation> presentations;
     ObservableList<Room> rooms;
+    ObservableList<Customer> customers;
+    ObservableList<ReservatedSeat> seats;
+
+    public Cinema() {
+        this.movies = FXCollections.observableArrayList();
+        this.presentations = FXCollections.observableArrayList();
+        this.rooms = FXCollections.observableArrayList();
+        this.customers = FXCollections.observableArrayList();
+        this.seats = FXCollections.observableArrayList();
+    }
+
+    public ObservableList<ReservatedSeat> getSeats() {
+        return seats;
+    }
+
+    public void setSeats(ObservableList<ReservatedSeat> seats) {
+        this.seats = seats;
+    }
+
+    public ObservableList<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(ObservableList<Customer> customers) {
+        this.customers = customers;
+    }
 
     public ObservableList<Movie> getMovies() {
         return movies;
@@ -19,12 +42,12 @@ public class Cinema {
         this.movies = movies;
     }
 
-    public ObservableList<Show> getShows() {
-        return shows;
+    public ObservableList<Presentation> getPresentations() {
+        return presentations;
     }
 
-    public void setShows(ObservableList<Show> shows) {
-        this.shows = shows;
+    public void setPresentations(ObservableList<Presentation> presentations) {
+        this.presentations = presentations;
     }
 
     public ObservableList<Room> getRooms() {
@@ -35,26 +58,44 @@ public class Cinema {
         this.rooms = rooms;
     }
 
-    public Cinema() {
-        this.movies = FXCollections.observableArrayList();
-        this.shows = FXCollections.observableArrayList();
-        this.rooms = FXCollections.observableArrayList();
+    public ObservableList<String> getMovieNames() {
+        ObservableList<String> movieNames = FXCollections.observableArrayList();
+        for (Movie movie : this.movies) {
+            movieNames.add(movie.getName());
+        }
+        return movieNames;
+    }
+
+    public ObservableList<String> getRoomNames() {
+        ObservableList<String> roomNames = FXCollections.observableArrayList();
+        for (Room room : this.rooms) {
+            roomNames.add(room.getName());
+        }
+        return roomNames;
+    }
+
+    public void addSeat(ReservatedSeat seat){
+        this.seats.add(seat);
     }
 
     public void addMovie(Movie movie) {
         this.movies.add(movie);
     }
 
-    public void addShow(Show show) {
-        this.shows.add(show);
+    public void addShow(Presentation presentation) {
+        this.presentations.add(presentation);
     }
 
     public void addRoom(Room room) {
         this.rooms.add(room);
     }
 
+    public void addCustomer(Customer customer) {
+        this.customers.add(customer);
+    }
+
     public void deleteShow() {
-        //this.shows.remove();
+        //this.presentations.remove();
     }
 
     public void deleteRoom() {
@@ -62,7 +103,15 @@ public class Cinema {
     }
 
     public void deleteMovie() {
-        //      this.movies.remove();
+        //       this.movies.remove();
+    }
+
+    public void deleteCustomer() {
+        //       this.customers.remove();
+    }
+
+    public void deleteSeat() {
+        //       this.seats.remove();
     }
 
 

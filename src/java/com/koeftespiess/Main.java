@@ -1,10 +1,9 @@
 package com.koeftespiess;
 
-import com.koeftespiess.classes.Cinema;
-import com.koeftespiess.classes.Movie;
-import com.koeftespiess.classes.Room;
-import com.koeftespiess.classes.Show;
+import com.koeftespiess.classes.*;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,17 +11,17 @@ import javafx.stage.Stage;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.UUID;
+import java.util.List;
 
 public class Main extends Application {
 
-    public Cinema cinema = new Cinema();
+    public Cinema cinema;
 
     public Stage primaryStage;
 
@@ -36,7 +35,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Main.instance = this;
-        this.session = getSession();
+        this.cinema = load();
+
         this.primaryStage = primaryStage;
 
         primaryStage.setTitle("MainMenu");
@@ -48,17 +48,69 @@ public class Main extends Application {
         launch(args);
     }
 
+    public Cinema load() {
+        ObservableList<Movie> movies = FXCollections.observableArrayList(loadAllMovies());
+        ObservableList<Room> rooms = FXCollections.observableArrayList(loadAllRooms());
+        ObservableList<Presentation> presentations = FXCollections.observableArrayList(loadAllPresentation());
+        ObservableList<Customer> customers = FXCollections.observableArrayList(loadAllCustomers());
+        ObservableList<ReservatedSeat> seats = FXCollections.observableArrayList(loadAllReservatedSeats());
+
+        //Temporary cinema object
+        Cinema tCinema = new Cinema();
+        tCinema.setMovies(movies);
+        tCinema.setRooms(rooms);
+        tCinema.setPresentations(presentations);
+        tCinema.setCustomers(customers);
+        tCinema.setSeats(seats);
+
+        return tCinema;
+    }
+
+    public List<Movie> loadAllMovies() {
+        return this.getSession().createQuery("FROM Movie").list();
+    }
+
+    public List<Room> loadAllRooms() {
+        return this.getSession().createQuery("FROM Room").list();
+    }
+
+    public List<Presentation> loadAllPresentation() {
+        return this.getSession().createQuery("FROM Presentation").list();
+    }
+
+    public List<Customer> loadAllCustomers() {
+        return this.getSession().createQuery("FROM Customer ").list();
+    }
+
+    public List<ReservatedSeat> loadAllReservatedSeats() {
+        return this.getSession().createQuery("FROM ReservatedSeat ").list();
+    }
+
+    public List<Integer> getReservatedSeats(Presentation presentation) {
+        List<Integer> reservatedSeats = null;
+        int presentationID = presentation.getID();
+        for (ReservatedSeat seat : this.cinema.getSeats()) {
+            if (seat.getPresentation().getID() == presentationID){
+                reservatedSeats.add(seat.getSeatNumber());
+            }
+        }
+
+        return reservatedSeats;
+    }
+
     public Session getSession() {
         if (this.session != null) return this.session;
 
         Configuration con = new Configuration().configure();
         con.addAnnotatedClass(Movie.class);
         con.addAnnotatedClass(Room.class);
-        con.addAnnotatedClass(Show.class);
+        con.addAnnotatedClass(Presentation.class);
+        con.addAnnotatedClass(Customer.class);
+        con.addAnnotatedClass(ReservatedSeat.class);
 
-        ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
+        ServiceRegistry sr = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
 
-        SessionFactory sf = con.buildSessionFactory(reg);
+        SessionFactory sf = con.buildSessionFactory(sr);
 
         this.session = sf.openSession();
         return this.session;
@@ -66,19 +118,31 @@ public class Main extends Application {
 
     public void saveMovie(Movie movie) {
         Transaction tx = getSession().beginTransaction();
-        session.save(movie);
+        getSession().save(movie);
         tx.commit();
     }
 
-    public void saveShow(Show show) {
+    public void saveShow(Presentation presentation) {
         Transaction tx = getSession().beginTransaction();
-        session.save(show);
+        getSession().save(presentation);
         tx.commit();
     }
 
     public void saveRoom(Room room) {
         Transaction tx = getSession().beginTransaction();
-        session.save(room);
+        getSession().save(room);
+        tx.commit();
+    }
+
+    public void saveCustomer(Customer customer) {
+        Transaction tx = getSession().beginTransaction();
+        getSession().save(customer);
+        tx.commit();
+    }
+
+    private void saveSeat(ReservatedSeat seat) {
+        Transaction tx = getSession().beginTransaction();
+        getSession().save(seat);
         tx.commit();
     }
 
@@ -97,10 +161,24 @@ public class Main extends Application {
     }
 
     public void addShow(LocalDate date, Movie movie, Room room) {
-        Show show = new Show(UUID.randomUUID().toString(), date, movie, room);
-        System.out.println(show.toString());
-        this.cinema.addShow(show);
-        this.saveShow(show);
+        Presentation presentation = new Presentation(date, movie, room);
+        System.out.println(presentation.toString());
+        this.cinema.addShow(presentation);
+        this.saveShow(presentation);
+    }
+
+    public void addCustomer(String name) {
+        Customer customer = new Customer(name);
+        System.out.println(customer.toString());
+        this.cinema.addCustomer(customer);
+        this.saveCustomer(customer);
+    }
+
+    public void addSeat(Presentation presentation, Customer customer, int seatNumber) {
+        ReservatedSeat seat = new ReservatedSeat(presentation, customer, seatNumber);
+        System.out.println(seat.toString());
+        this.cinema.addSeat(seat);
+        this.saveSeat(seat);
     }
 
     public void showMainMenu() throws IOException {

@@ -17,11 +17,11 @@
                     <Insets top="50.0" />
                 </VBox.margin>
             </ComboBox>
-         <DatePicker fx:id="date" prefHeight="25.0" prefWidth="199.0">
-            <VBox.margin>
-               <Insets top="50.0" />
-            </VBox.margin>
-         </DatePicker>
+            <DatePicker fx:id="date" prefHeight="25.0" prefWidth="199.0">
+                <VBox.margin>
+                    <Insets top="50.0" />
+                </VBox.margin>
+            </DatePicker>
         </VBox>
         <Button fx:id="createButton" layoutX="480.0" layoutY="340.0" onAction="#addShow" prefWidth="70" text="Erstellen" />
         <Button fx:id="backButton" layoutX="480.0" layoutY="370.0" onAction="#back" prefWidth="70" text="Zurück" />
