@@ -3,6 +3,7 @@ package com.koeftespiess.presentation;
 import com.koeftespiess.Main;
 import com.koeftespiess.classes.Cinema;
 import com.koeftespiess.classes.Movie;
+import com.koeftespiess.classes.Presentation;
 import com.koeftespiess.classes.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -66,22 +67,15 @@ public class CreatePresentationController implements Initializable {
     }
 
     public void addShow() throws IOException {
-        Movie movie = null;
-        Room room = null;
-        System.out.println(this.room.getValue());
-        this.cinema.getMovies();
-        for (Room item : this.cinema.getRooms()) {
-            if (item.isMe(this.room.getValue().getId())) {
-                room = item;
-            }
-        }
-        for (Movie item : this.cinema.getMovies()) {
-            if (item.isMe(this.movie.getValue().getId())) {
-                movie = item;
-            }
-        }
+        Movie movie = this.movie.getValue();
+        Room room = this.room.getValue();
+
         if (movie != null && room != null) {
-            Main.getInstance().addShow(date.getValue(), movie, room);
+            Presentation presentation = new Presentation();
+            presentation.setDisplayDate(date.getValue());
+            presentation.setMovie(movie);
+            presentation.setRoom(room);
+            Main.getInstance().addShow(presentation);
         }
         this.back(new ActionEvent());
 

@@ -40,4 +40,8 @@ public class MainMenuController {
         FXMLLoader loader = FXMLLoader.load(getClass().getResource("../java/com/koeftespiess/mainMenu/movieCard.fxml"));
         AnchorPane pane = loader.load();
     }
+
+    public void changeTocreateReservation(ActionEvent actionEvent) throws IOException {
+        Main.getInstance().showCreateReservation();
+    }
 }

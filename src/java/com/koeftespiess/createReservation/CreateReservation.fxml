@@ -9,16 +9,15 @@
     <children>
         <VBox prefWidth="200">
             <Pane prefWidth="200">
-                <TextField fx:id="customerName" layoutX="50.0" layoutY="116.0" prefHeight="36.0" prefWidth="186.0" promptText="Name" />
-                <ComboBox fx:id="prensentation" layoutX="48.0" layoutY="206.0" prefWidth="200" promptText="Presentation auswählen">
+                <TextField fx:id="customerName" layoutX="20.0" layoutY="116.0" prefHeight="36.0" prefWidth="186.0" promptText="Name" />
+                <ComboBox fx:id="prensentation" layoutX="20.0" layoutY="206.0" prefWidth="200" promptText="Presentation auswählen">
                     <VBox.margin>
                         <Insets top="50.0" />
                     </VBox.margin>
                 </ComboBox>
-                <Button layoutX="493.0" layoutY="334.0" prefHeight="36.0" onAction="#create" prefWidth="64.0" text="Erstellen" />
-                <Button layoutX="27.0" layoutY="334.0" onAction="#back" prefHeight="36.0" prefWidth="64.0" text="Zurück" />
-                <Label layoutX="51.0" layoutY="97.0" text="Name des Kunden" />
-                <Label layoutX="50.0" layoutY="181.0" text="Was wollen Sie sich ansehen" />
+                <Button layoutX="20.0" layoutY="352.0" onAction="#back" prefHeight="36.0" prefWidth="64.0" text="Zurück" />
+                <Label layoutX="20.0" layoutY="100.0" text="Name des Kunden" />
+                <Label layoutX="20.0" layoutY="181.0" text="Was wollen Sie sich ansehen" />
             </Pane>
         </VBox>
         <Label layoutX="190.0" layoutY="27.0" text="Reservation erstellen">
@@ -26,5 +25,6 @@
                 <Font size="24.0" />
             </font>
         </Label>
+          <Button layoutX="494.0" layoutY="351.0" onAction="#create" prefHeight="36.0" prefWidth="64.0" text="Erstellen" />
     </children>
 </AnchorPane>

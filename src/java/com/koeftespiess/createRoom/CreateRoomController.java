@@ -1,6 +1,7 @@
 package com.koeftespiess.createRoom;
 
 import com.koeftespiess.Main;
+import com.koeftespiess.classes.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -27,7 +28,12 @@ public class CreateRoomController {
     private TextField roomRows;
 
     public void create(ActionEvent actionEventevent) throws IOException {
-        Main.getInstance().addRoom(nametxt.getText(), Integer.parseInt(roomRows.getText()), Integer.parseInt(roomCols.getText()));
+        Room room = new Room();
+        room.setName(nametxt.getText());
+        room.setRoomCols(Integer.parseInt(roomRows.getText()));
+        room.setRoomRows(Integer.parseInt(roomCols.getText()));
+
+        Main.getInstance().addRoom(room);
         this.back(new ActionEvent());
     }
 

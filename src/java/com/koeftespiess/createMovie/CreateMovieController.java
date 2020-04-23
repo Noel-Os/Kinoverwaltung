@@ -1,6 +1,7 @@
 package com.koeftespiess.createMovie;
 
 import com.koeftespiess.Main;
+import com.koeftespiess.classes.Movie;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -31,11 +32,11 @@ public class CreateMovieController {
 
     public void addMovie() throws IOException {
 
-        //if (movieName.getText() != "Name") {
-        Main.getInstance().addMovie(movieName.getText(), movieDescription.getText(), Integer.parseInt(movieLength.getText()));
-        //}else{
-        //    System.out.println("Bitte geben Sie einen Namen und eine Länge an.");
-        //}
+        Movie movie = new Movie();
+        movie.setName(movieName.getText());
+        movie.setDescription(movieDescription.getText());
+        movie.setDuration(Integer.parseInt(movieLength.getText()));
+        Main.getInstance().addMovie(movie);
         this.back(new ActionEvent());
     }
 

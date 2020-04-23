@@ -146,29 +146,25 @@ public class Main extends Application {
         tx.commit();
     }
 
-    public void addMovie(String name, String description, int duration) {
-        Movie movie = new Movie(name, description, duration);
+    public void addMovie(Movie movie) {
         System.out.println(movie.toString());
         this.cinema.addMovie(movie);
         this.saveMovie(movie);
     }
 
-    public void addRoom(String name, int rows, int cols) {
-        Room room = new Room(rows, cols, name);
+    public void addRoom(Room room) {
         System.out.println(room.toString());
         this.cinema.addRoom(room);
         this.saveRoom(room);
     }
 
-    public void addShow(LocalDate date, Movie movie, Room room) {
-        Presentation presentation = new Presentation(date, movie, room);
+    public void addShow(Presentation presentation) {
         System.out.println(presentation.toString());
         this.cinema.addShow(presentation);
         this.saveShow(presentation);
     }
 
-    public void addCustomer(String name) {
-        Customer customer = new Customer(name);
+    public void addCustomer(Customer customer) {
         System.out.println(customer.toString());
         this.cinema.addCustomer(customer);
         this.saveCustomer(customer);
@@ -198,6 +194,11 @@ public class Main extends Application {
 
     public void showCreateMovie() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createMovie/CreateMovie.fxml"));
+        this.primaryStage.setScene(new Scene(root));
+    }
+
+    public void showCreateReservation() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("createReservation/CreateReservation.fxml"));
         this.primaryStage.setScene(new Scene(root));
     }
 }
