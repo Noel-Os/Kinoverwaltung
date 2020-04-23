@@ -4,7 +4,6 @@ import com.koeftespiess.Main;
 import com.koeftespiess.classes.Cinema;
 import com.koeftespiess.classes.Customer;
 import com.koeftespiess.classes.Presentation;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,7 +11,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.util.StringConverter;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
