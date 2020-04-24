@@ -2,8 +2,11 @@ package com.koeftespiess.showRoom;
 
 import com.koeftespiess.Main;
 import com.koeftespiess.classes.Room;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
@@ -13,6 +16,8 @@ import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -32,13 +37,14 @@ public class ShowRoomController implements Initializable {
         showRoom(roomRows, roomCols);
 
     }
+
     public void showRoom(int roomRows, int roomCols) {
 
         String[] alphabet = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
 
         seatGrid.setAlignment(Pos.CENTER);
-        for (int i = 0; i < roomRows; i++){
-            for (int count = 0; count < roomCols; count++){
+        for (int i = 0; i < roomRows; i++) {
+            for (int count = 0; count < roomCols; count++) {
                 ToggleButton seat = new ToggleButton(alphabet[i] + " | " + count + "");
                 seat.setPrefWidth(200);
                 seatGrid.add(seat, count, i);
@@ -50,14 +56,15 @@ public class ShowRoomController implements Initializable {
 
     public int getRoomRows() {
         ObservableList<Room> rooms = Main.getInstance().getRooms();
-        return rooms.get(0).getRoomRows();
+        //return rooms.get(0).getRoomRows();
+        return 9;
     }
 
     public int getRoomCols() {
         ObservableList<Room> rooms = Main.getInstance().getRooms();
-        return rooms.get(0).getRoomCols();
+        //return rooms.get(0).getRoomCols();
+        return 9;
     }
-
 
     public void back(ActionEvent actionEvent) throws IOException {
         Main.getInstance().showMainMenu();

@@ -117,21 +117,25 @@ public class Main extends Application {
     public void showMainMenu() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainMenu/MainMenu.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("com/koeftespiess/style.css");
     }
 
     public void showCreatePresentation() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("presentation/createPresentation.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("com/koeftespiess/style.css");
     }
 
     public void showCreateRoom() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createRoom/CreateRoom.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("com/koeftespiess/style.css");
     }
 
     public void showCreateMovie() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createMovie/CreateMovie.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        //root.getStylesheets().add("com/koeftespiess/style.css");
     }
 
     public void showRoom() throws IOException {
