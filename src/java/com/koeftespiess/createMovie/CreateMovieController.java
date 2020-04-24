@@ -4,19 +4,27 @@ import com.koeftespiess.Main;
 import com.koeftespiess.classes.Movie;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.TransferMode;
+import javafx.scene.paint.Paint;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import javax.imageio.stream.FileImageInputStream;
+import java.io.*;
 import java.util.List;
 
 public class CreateMovieController {
+
+    @FXML
+    public Button cButton;
+    public Label warningLabel;
+    public ImageView imageView;
 
     @FXML
     private TextField movieName;
@@ -30,29 +38,26 @@ public class CreateMovieController {
     @FXML
     private ImageView movieImage;
 
-    public void addMovie() throws IOException {
+    Movie movie = new Movie();
 
-        Movie movie = new Movie();
+    public void informationProof() throws IOException {
+        if (!movieName.getText().equals("")){
+            if (!movieDescription.getText().equals("")){
+                if (tryParse(movieLength.getText()) != null)
+                    this.addMovie();
+            }
+        }
+        warningLabel.setText("False or Missing Information");
+        warningLabel.setTextFill(Paint.valueOf("red"));
+    }
+
+    public void addMovie() throws IOException {
+        Movie movie = this.movie;
         movie.setName(movieName.getText());
         movie.setDescription(movieDescription.getText());
         movie.setDuration(Integer.parseInt(movieLength.getText()));
         Main.getInstance().addMovie(movie);
         this.back(new ActionEvent());
-    }
-
-    @FXML
-    public void handleDragOver(DragEvent event) {
-
-        if (event.getDragboard().hasFiles()) {
-            event.acceptTransferModes(TransferMode.ANY);
-        }
-    }
-
-    @FXML
-    public void handleDrop(DragEvent event) throws FileNotFoundException {
-        List<File> files = event.getDragboard().getFiles();
-        Image img = new Image(new FileInputStream(files.get(0)));
-        movieImage.setImage(img);
     }
 
     public void back(ActionEvent actionEvent) throws IOException {
@@ -61,4 +66,29 @@ public class CreateMovieController {
 
     }
 
+    public static Integer tryParse(String text) {
+        try {
+            return Integer.parseInt(text);
+        } catch (NumberFormatException e) {
+            return null;
+        }
+    }
+
+    public void openFileChooser(ActionEvent actionEvent) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select Movie Picture");
+        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png"));
+        File selectedFile = fileChooser.showOpenDialog(null);
+
+        Image image = new Image(selectedFile.toURI().toString());
+        imageView.setImage(image);
+
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(selectedFile);
+            this.movie.setImageBlob(fis);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }

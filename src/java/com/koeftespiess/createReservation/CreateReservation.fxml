@@ -9,6 +9,7 @@
     <children>
         <VBox prefWidth="200">
             <Pane prefWidth="200">
+                <Label fx:id="warningLabel" layoutX="37.0" layoutY="65.0" />
                 <TextField fx:id="customerName" layoutX="20.0" layoutY="115.0" prefHeight="36.0" prefWidth="186.0" promptText="Name" />
                 <ComboBox fx:id="prensentation" layoutX="20.0" layoutY="200.0" prefWidth="200" promptText="Presentation auswählen">
                     <VBox.margin>
@@ -18,7 +19,7 @@
                 <Button layoutX="20.0" layoutY="352.0" onAction="#back" prefHeight="36.0" prefWidth="64.0" text="Zurück" />
                 <Label layoutX="20.0" layoutY="95.0" text="Name des Kunden" />
                 <Label layoutX="20.0" layoutY="180.0" text="Was wollen Sie sich ansehen" />
-            <Button layoutX="20.0" layoutY="260.0" onAction="#selectSeats" mnemonicParsing="false" text="Sitzplätze auswählen" />
+            <Button layoutX="20.0" layoutY="260.0" mnemonicParsing="false" onAction="#informationProof" text="Sitzplätze auswählen" />
             </Pane>
         </VBox>
         <Label layoutX="190.0" layoutY="27.0" text="Reservation erstellen">

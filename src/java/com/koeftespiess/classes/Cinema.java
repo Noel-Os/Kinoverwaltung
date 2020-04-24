@@ -3,6 +3,8 @@ package com.koeftespiess.classes;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.util.ArrayList;
+
 public class Cinema {
     ObservableList<Movie> movies;
     ObservableList<Presentation> presentations;
@@ -74,7 +76,7 @@ public class Cinema {
         return roomNames;
     }
 
-    public void addSeat(ReservatedSeat seat){
+    public void addSeat(ReservatedSeat seat) {
         this.seats.add(seat);
     }
 
@@ -94,25 +96,47 @@ public class Cinema {
         this.customers.add(customer);
     }
 
-    public void deleteShow() {
-        //this.presentations.remove();
+    public void deletePresentations(ArrayList<Presentation> presentations) {
+        ArrayList<ReservatedSeat> sToRemove = new ArrayList<>();
+        for (Presentation presentation : presentations) {
+            for (ReservatedSeat seat : getSeats()) {
+                if (seat.getPresentation().getID() == presentation.getID()) {
+                    sToRemove.add(seat);
+                }
+            }
+        }
+        deleteSeats(sToRemove);
+        this.presentations.removeAll(presentations);
     }
 
-    public void deleteRoom() {
-        //        this.rooms.remove();
+    public void deleteRoom(Room room) {
+        ArrayList<Presentation> pToRemove = new ArrayList<>();
+        for (Presentation presentation:this.getPresentations()){
+        if (presentation.getRoom() == room){
+            pToRemove.add(presentation);
+        }
+    }
+        this.deletePresentations(pToRemove);
+        this.rooms.remove(room);
+}
+
+    public void deleteMovie(Movie movie) {
+        ArrayList<Presentation> pToRemove = new ArrayList<>();
+        for (Presentation presentation:this.getPresentations()){
+            if (presentation.getMovie() == movie){
+                pToRemove.add(presentation);
+            }
+        }
+        this.deletePresentations(pToRemove);
+        this.movies.remove(movie);
     }
 
-    public void deleteMovie() {
-        //       this.movies.remove();
+    public void deleteCustomer(Customer customer) {
+        this.customers.remove(customer);
     }
 
-    public void deleteCustomer() {
-        //       this.customers.remove();
+    public void deleteSeats(ArrayList<ReservatedSeat> seat) {
+        this.seats.removeAll(seat);
     }
-
-    public void deleteSeat() {
-        //       this.seats.remove();
-    }
-
 
 }

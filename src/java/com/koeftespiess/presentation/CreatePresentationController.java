@@ -8,17 +8,23 @@ import com.koeftespiess.classes.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
+import javafx.scene.control.*;
+import javafx.scene.paint.Paint;
 import javafx.util.StringConverter;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalTime;
 import java.util.ResourceBundle;
 
 public class CreatePresentationController implements Initializable {
 
+    @FXML
+    public Label warningLabel;
+    @FXML
+    public TextField seconds;
+    @FXML
+    public TextField hours;
     @FXML
     DatePicker date;
 
@@ -42,7 +48,7 @@ public class CreatePresentationController implements Initializable {
         room.setConverter(new StringConverter<Room>() {
             @Override
             public String toString(Room room) {
-               return room.getName();
+                return room.getName();
             }
 
             @Override
@@ -66,22 +72,46 @@ public class CreatePresentationController implements Initializable {
         movie.setItems(this.cinema.getMovies());
     }
 
-    public void addShow() throws IOException {
-        Movie movie = this.movie.getValue();
-        Room room = this.room.getValue();
-
-        if (movie != null && room != null) {
-            Presentation presentation = new Presentation();
-            presentation.setDisplayDate(date.getValue());
-            presentation.setMovie(movie);
-            presentation.setRoom(room);
-            Main.getInstance().addShow(presentation);
-        }
+    public void addShow(Movie movie, Room room) throws IOException {
+        Presentation presentation = new Presentation();
+        presentation.setDisplayDate(date.getValue());
+        presentation.setTime(LocalTime.of(Integer.parseInt(hours.getText()), Integer.parseInt(seconds.getText()), 0, 0));
+        presentation.setMovie(movie);
+        presentation.setRoom(room);
+        Main.getInstance().addShow(presentation);
         this.back(new ActionEvent());
 
     }
 
     public void back(ActionEvent actionEvent) throws IOException {
         Main.getInstance().showMainMenu();
+    }
+
+    public void informationProof(ActionEvent actionEvent) throws IOException {
+        Movie movie = this.movie.getValue();
+        Room room = this.room.getValue();
+        if (movie != null && room != null) {
+            if (date.getValue() != null) {
+                if (tryParse(hours.getText()) != null) {
+                    if (tryParse(hours.getText()) < 24) {
+                        if (tryParse(seconds.getText()) != null) {
+                            if (tryParse(hours.getText()) < 60) {
+                                this.addShow(movie, room);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        warningLabel.setText("False or Missing Information");
+        warningLabel.setTextFill(Paint.valueOf("red"));
+    }
+
+    public static Integer tryParse(String text) {
+        try {
+            return Integer.parseInt(text);
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 }

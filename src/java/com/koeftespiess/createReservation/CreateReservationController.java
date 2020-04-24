@@ -8,7 +8,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Paint;
 import javafx.util.StringConverter;
 
 import java.io.IOException;
@@ -24,6 +26,9 @@ public class CreateReservationController implements Initializable {
     ComboBox<Presentation> prensentation;
 
     private final Cinema cinema = Main.getInstance().cinema;
+
+    @FXML
+    private Labeled warningLabel;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -45,6 +50,16 @@ public class CreateReservationController implements Initializable {
 
     public void back(ActionEvent actionEvent) throws IOException {
         Main.getInstance().showMainMenu();
+    }
+
+    public void informationProof() throws IOException {
+        if (!customerName.equals("")) {
+            if (prensentation.getValue() != null) {
+                selectSeats(new ActionEvent());
+            }
+        }
+        warningLabel.setText("False or Missing Information");
+        warningLabel.setTextFill(Paint.valueOf("red"));
     }
 
     public void selectSeats(ActionEvent actionEvent) throws IOException {

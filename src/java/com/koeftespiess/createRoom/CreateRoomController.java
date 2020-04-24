@@ -7,11 +7,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Paint;
 
 import java.io.IOException;
 
 public class CreateRoomController {
 
+    @FXML
+    public Label warningLabel;
     @FXML
     private Button bt;
 
@@ -39,5 +42,25 @@ public class CreateRoomController {
 
     public void back(ActionEvent actionEvent) throws IOException {
         Main.getInstance().showMainMenu();
+    }
+
+    public void informationProof(ActionEvent actionEvent) throws IOException {
+        if (!nametxt.getText().equals("")){
+            if (tryParse(roomCols.getText()) != null){
+                if (tryParse(roomRows.getText()) != null){
+                    this.create(new ActionEvent());
+                }
+            }
+        }
+        warningLabel.setText("False or Missing Information");
+        warningLabel.setTextFill(Paint.valueOf("red"));
+    }
+
+    public static Integer tryParse(String text) {
+        try {
+            return Integer.parseInt(text);
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 }

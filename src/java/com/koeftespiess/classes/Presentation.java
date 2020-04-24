@@ -2,6 +2,7 @@ package com.koeftespiess.classes;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 public class Presentation {
@@ -10,6 +11,7 @@ public class Presentation {
     @GeneratedValue
     private int ID;
     private LocalDate displayDate;
+    private LocalTime time;
     @ManyToOne
     private Movie movie;
     @ManyToOne
@@ -20,20 +22,30 @@ public class Presentation {
     }
 
 
-    public Presentation(LocalDate displayDate, Movie movie, Room room) {
+    public Presentation(LocalDate displayDate, Movie movie, Room room, LocalTime time) {
         this.displayDate = displayDate;
         this.movie = movie;
         this.room = room;
+        this.time = time;
     }
 
     @Override
     public String toString() {
         return "Presentation{" +
-                "ID='" + ID + '\'' +
+                "ID=" + ID +
                 ", displayDate=" + displayDate +
+                ", time=" + time +
                 ", movie=" + movie +
                 ", room=" + room +
                 '}';
+    }
+
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalTime time) {
+        this.time = time;
     }
 
     public int getID() {

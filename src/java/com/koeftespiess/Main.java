@@ -17,6 +17,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +38,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Main.instance = this;
         this.cinema = load();
+        this.deleteOldPresentations();
 
         this.primaryStage = primaryStage;
 
@@ -47,6 +49,16 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public void deleteOldPresentations(){
+        ArrayList<Presentation> pToRemove = new ArrayList<>();
+        for (Presentation presentation: this.cinema.getPresentations()) {
+            if (presentation.getDisplayDate().compareTo(LocalDate.now()) < 0){
+                pToRemove.add(presentation);
+            }
+        }
+        this.cinema.deletePresentations(pToRemove);
     }
 
     public Cinema load() {
@@ -182,8 +194,7 @@ public class Main extends Application {
         this.saveCustomer(customer);
     }
 
-    public void addSeat(Presentation presentation, Customer customer, int seatNumber) {
-        ReservatedSeat seat = new ReservatedSeat(presentation, customer, seatNumber);
+    public void addSeat(ReservatedSeat seat) {
         System.out.println(seat.toString());
         this.cinema.addSeat(seat);
         this.saveSeat(seat);
@@ -192,35 +203,41 @@ public class Main extends Application {
     public void showMainMenu() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("mainMenu/MainMenu.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("css/style.css");
     }
 
     public void showCreatePresentation() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("presentation/createPresentation.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("css/style.css");
     }
 
     public void showCreateRoom() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createRoom/CreateRoom.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("css/style.css");
     }
 
     public void showCreateMovie() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createMovie/CreateMovie.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("css/style.css");
     }
 
     public void showCreateReservation() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createReservation/CreateReservation.fxml"));
         this.primaryStage.setScene(new Scene(root));
+        root.getStylesheets().add("css/style.css");
     }
 
     public void showShowRoom(Customer customer, Presentation presentation) throws IOException {
         Parent root = null;
         FXMLLoader loader = new FXMLLoader(getClass().getResource("createReservation/showRoom.fxml"));
         root = loader.load();
+        root.getStylesheets().add("css/style.css");
         ((showRoomController) loader.getController()).setInformation(customer, presentation);
         Stage stage = new Stage();
-        stage.setScene(new Scene(root, 300, 275));
+        stage.setScene(new Scene(root, 1920, 1080));
         stage.show();
     }
 }
