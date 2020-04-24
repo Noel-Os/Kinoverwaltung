@@ -31,7 +31,7 @@ public class Movie {
     }
 
     public Image getImage(){
-        return new Image("../images/Darth-Vader-icon.png");
+        return new Image("images/Darth-Vader-icon.png");
     }
 
     @Override

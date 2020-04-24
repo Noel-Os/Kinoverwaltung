@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="669.0" prefWidth="1073.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.koeftespiess.createReservation.showRoomController">
+    <Button layoutX="928.0" layoutY="629.0" mnemonicParsing="false" onAction="#create" prefHeight="25.0" prefWidth="54.0" text="Zurück" />
+    <Button layoutX="998.0" layoutY="629.0" mnemonicParsing="false" onAction="#back" text="Erstellen" />
+   <GridPane fx:id="seatPane" layoutX="14.0" layoutY="14.0" prefHeight="608.0" prefWidth="1043.0">
+   </GridPane>
+
+</AnchorPane>

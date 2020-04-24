@@ -1,6 +1,7 @@
 package com.koeftespiess;
 
 import com.koeftespiess.classes.*;
+import com.koeftespiess.createReservation.showRoomController;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,7 +17,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 import java.io.IOException;
-import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main extends Application {
@@ -87,15 +88,26 @@ public class Main extends Application {
     }
 
     public List<Integer> getReservatedSeats(Presentation presentation) {
-        List<Integer> reservatedSeats = null;
+        List<Integer> reservatedSeats = new ArrayList<Integer>();
         int presentationID = presentation.getID();
         for (ReservatedSeat seat : this.cinema.getSeats()) {
-            if (seat.getPresentation().getID() == presentationID){
+            if (seat.getPresentation().getID() == presentationID) {
                 reservatedSeats.add(seat.getSeatNumber());
             }
         }
 
         return reservatedSeats;
+    }
+
+    public Boolean isSeatReserved(Presentation presentation, int seat) {
+        List<Integer> seats = this.getReservatedSeats(presentation);
+
+        for (int item : seats) {
+            if (seat == item) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public Session getSession() {
@@ -200,5 +212,15 @@ public class Main extends Application {
     public void showCreateReservation() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("createReservation/CreateReservation.fxml"));
         this.primaryStage.setScene(new Scene(root));
+    }
+
+    public void showShowRoom(Customer customer, Presentation presentation) throws IOException {
+        Parent root = null;
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("createReservation/showRoom.fxml"));
+        root = loader.load();
+        ((showRoomController) loader.getController()).setInformation(customer, presentation);
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root, 300, 275));
+        stage.show();
     }
 }

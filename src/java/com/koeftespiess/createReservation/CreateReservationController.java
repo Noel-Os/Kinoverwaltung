@@ -13,8 +13,6 @@ import javafx.util.StringConverter;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class CreateReservationController implements Initializable {
@@ -25,8 +23,6 @@ public class CreateReservationController implements Initializable {
     @FXML
     ComboBox<Presentation> prensentation;
 
-    private List<Integer> selectedSeats = null;
-
     private final Cinema cinema = Main.getInstance().cinema;
 
     @Override
@@ -35,7 +31,7 @@ public class CreateReservationController implements Initializable {
         prensentation.setConverter(new StringConverter<Presentation>() {
             @Override
             public String toString(Presentation presentation) {
-                return "Zeit: " + presentation.getDisplayDate() + "  Film: " + presentation.getMovie().getName() + "  Raum: " +presentation.getRoom().getName();
+                return "Zeit: " + presentation.getDisplayDate() + "  Film: " + presentation.getMovie().getName() + "  Raum: " + presentation.getRoom().getName();
             }
 
             @Override
@@ -47,30 +43,12 @@ public class CreateReservationController implements Initializable {
         prensentation.setItems(this.cinema.getPresentations());
     }
 
-    public void create(ActionEvent actionEvent) throws IOException {
-        Customer customer = new Customer(customerName.getText());
-        Main.getInstance().addCustomer(customer);
-        for (int seat:this.getSelectedSeats()) {
-            Main.getInstance().addSeat(prensentation.getValue(),customer, seat);
-        }
-        System.out.println(customerName.getText() + prensentation.getValue());
-        this.back(actionEvent);
-    }
-
-    private List<Integer> getSelectedSeats() {
-        List<Integer> selectedSeats = new ArrayList<>();
-        selectedSeats.add(1);
-        selectedSeats.add(2);
-        selectedSeats.add(7);
-
-        this.selectedSeats = selectedSeats;
-        return selectedSeats;
-    }
-
     public void back(ActionEvent actionEvent) throws IOException {
-
         Main.getInstance().showMainMenu();
-
     }
 
+    public void selectSeats(ActionEvent actionEvent) throws IOException {
+        Customer customer = new Customer(customerName.getText());
+        Main.getInstance().showShowRoom(customer, prensentation.getValue());
+    }
 }
